@@ -1,0 +1,84 @@
+<!-- Shows all the tiles of different values -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <!-- <link rel="stylesheet" href="vendors/css/animate.css"> -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico" type="image/x-icon">
+    <title>2048</title>
+</head>
+
+<body>
+    <div class="row-1">
+        <h1>2048</h1>
+        <div class="box new-game" id="new-game">NEW GAME</div>
+        <div class="box score" id="score">SCORE: 1234567</div>
+    </div>
+    <div class="row-1">
+
+        <div class="section group">
+            <div class="col span-1-of-4 inner-tile value-2" id="tile-00">2</div>
+            <div class="col span-1-of-4 inner-tile value-4096" id="tile-01">4096</div>
+            <div class="col span-1-of-4 inner-tile value-4" id="tile-02">4</div>
+            <div class="col span-1-of-4 inner-tile value-8192" id="tile-03">8192</div>
+        </div>
+        <div class="section group">
+            <div class="col span-1-of-4 inner-tile value-2048" id="tile-10">2048</div>
+            <div class="col span-1-of-4 inner-tile value-8" id="tile-11">8</div>
+            <div class="col span-1-of-4 inner-tile value-16384" id="tile-12">16384</div>
+            <div class="col span-1-of-4 inner-tile value-16" id="tile-13">16</div>
+        </div>
+        <div class="section group">
+            <div class="col span-1-of-4 inner-tile value-32" id="tile-20">32</div>
+            <div class="col span-1-of-4 inner-tile value-131072" id="tile-21">131072</div>
+            <div class="col span-1-of-4 inner-tile value-64" id="tile-22">64</div>
+            <div class="col span-1-of-4 inner-tile value-1024" id="tile-23">1024</div>
+        </div>
+        <div class="section group">
+            <div class="col span-1-of-4 inner-tile value-32768" id="tile-30">32768</div>
+            <div class="col span-1-of-4 inner-tile value-128" id="tile-31">128</div>
+            <div class="col span-1-of-4 inner-tile value-65536" id="tile-32">65536</div>
+            <!-- <div class="col span-1-of-4 inner-tile value-256" id="tile-33">256</div> -->
+            <div class="col span-1-of-4 inner-tile value-512" id="tile-33">512</div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <div id="gameOverModal" class="modal" style="display: none;">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="closeGameOver">&times;</span>
+                <h2>GAME OVER!</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="winModal" class="modal" style="display: none;">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="closeWin">&times;</span>
+                <h2>YOU WIN!!</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="resources/js/app.js"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <!-- <link rel="stylesheet" href="vendors/css/animate.css"> -->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico" type="image/x-icon">
+    <title>2048</title>
+</head>
+
+<body>
+    <div class="row-1">
+        <h1>2048</h1>
+        <div class="box new-game" id="new-game">NEW GAME</div>
+        <div class="box score" id="score">SCORE: 0</div>
+    </div>
+
+    <div class="row-1">
+        <div class="section group">
+            <div class="col span-1-of-4 inner-tile" id="tile-00"></div>
+            <div class="col span-1-of-4 inner-tile" id="tile-01"></div>
+            <div class="col span-1-of-4 inner-tile" id="tile-02"></div>
+            <div class="col span-1-of-4 inner-tile" id="tile-03"></div>
+        </div>
+        <div class="section group">
+            <div class="col span-1-of-4 inner-tile" id="tile-10"></div>
+            <div class="col span-1-of-4 inner-tile" id="tile-11"></div>
+            <div class="col span-1-of-4 inner-tile" id="tile-12"></div>
+            <div class="col span-1-of-4 inner-tile" id="tile-13"></div>
+        </div>
+        <div class="section group">
+            <div class="col span-1-of-4 inner-tile" id="tile-20"></div>
+            <div class="col span-1-of-4 inner-tile" id="tile-21"></div>
+            <div class="col span-1-of-4 inner-tile" id="tile-22"></div>
+            <div class="col span-1-of-4 inner-tile" id="tile-23"></div>
+        </div>
+        <div class="section group">
+            <div class="col span-1-of-4 inner-tile" id="tile-30"></div>
+            <div class="col span-1-of-4 inner-tile" id="tile-31"></div>
+            <div class="col span-1-of-4 inner-tile" id="tile-32"></div>
+            <div class="col span-1-of-4 inner-tile" id="tile-33"></div>
+        </div>
+    </div>
+
+    </div>
+
+    <div id="gameOverModal" class="modal" style="display: none;">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="closeGameOver">&times;</span>
+                <h2>GAME OVER!</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="winModal" class="modal" style="display: none;">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="closeWin">&times;</span>
+                <h2>YOU WIN!!</h2>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="resources/js/app.js"></script>
+
+</body>
+
+</html>
